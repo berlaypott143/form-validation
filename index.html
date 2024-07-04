@@ -17,25 +17,56 @@
 
         <div class="input-group">
           <label>Full Name</label>
-          <input type="text" placeholder="Enter your full name" />
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
         </div>
 
         <div class="input-group">
           <label>Phone</label>
-          <input type="text" placeholder="0996 878 3471" />
+          <input
+            type="text"
+            placeholder="0996 878 3471"
+            id="contact-number"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"><!--Phone is required--></span>
+        </div>
+
+        <div class="input-group">
+          <label>Address</label>
+          <input
+            type="text"
+            placeholder="Enter your address"
+            id="contact-address"
+            onkeyup="validateAddress()"
+          />
+          <span id="address-error"><!--Address is required--></span>
         </div>
 
         <div class="input-group">
           <label>Email Address</label>
-          <input type="text" placeholder="Enter your email" />
+          <input
+            type="text"
+            placeholder="Enter your email"
+            id="contact-email"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"><!--Email is required--></span>
         </div>
 
         <div class="input-group">
           <label>Your message</label>
           <textarea rows="5" placeholder="Enter your message"></textarea>
+          <span id="message-error"><!--Message is required--></span>
         </div>
 
         <button>Submit</button>
+        <span id="submit-error"><!--Please fix the error--></span>
       </form>
     </div>
 
