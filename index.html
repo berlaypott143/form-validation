@@ -61,11 +61,16 @@
 
         <div class="input-group">
           <label>Your message</label>
-          <textarea rows="5" placeholder="Enter your message"></textarea>
+          <textarea
+            rows="5"
+            placeholder="Enter your message"
+            id="contact-message"
+            onkeyup="validateMessage()"
+          ></textarea>
           <span id="message-error"><!--Message is required--></span>
         </div>
 
-        <button>Submit</button>
+        <button onclick="return validateForm()">Submit</button>
         <span id="submit-error"><!--Please fix the error--></span>
       </form>
     </div>
